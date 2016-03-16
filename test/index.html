@@ -2,15 +2,7 @@
 <!--A simple test page for checking on RESTful APIs via a simple XMLHTTPResponses -->
 <html>
 <body>
-  <script>
-      window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1541896956109763',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
-
+<script>
    
      // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
@@ -43,15 +35,13 @@
       statusChangeCallback(response);
     });
   }
-
   window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '{your-app-id}',
-    cookie     : true,  // enable cookies to allow the server to access 
-                        // the session
-    xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.5' // use graph api version 2.5
-  });
+    FB.init({
+      appId      : '1541896956109763',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
 
   // Now that we've initialized the JavaScript SDK, we call 
   // FB.getLoginStatus().  This function gets the state of the
@@ -91,11 +81,11 @@
     });
   }
 
+</script>
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
-</script>
+
 <div id="status">
-  dum
 </div>
 
 </body>
